@@ -2,7 +2,7 @@ package mathAlgorithrmBook.chapter2;
 
 import java.util.Scanner;
 
-public class assignmentId001 {
+public class code2_1_1 {
     public static void main(String[] args) {
         // CLIから整数を入力する
         Scanner scanner = new Scanner(System.in);

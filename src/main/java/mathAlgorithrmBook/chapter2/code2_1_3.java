@@ -2,7 +2,7 @@ package mathAlgorithrmBook.chapter2;
 
 import java.util.*;
 
-public class assignmentId003 {
+public class code2_1_3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
