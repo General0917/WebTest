@@ -1,4 +1,4 @@
-package mathAlgorithrmBook.editorial.chat2_2;
+package mathAlgorithrmBook.editorial.chap2_2;
 
 public class prob2_2_2 {
     public static void main(String[] args) {
