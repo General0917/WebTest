@@ -6,27 +6,25 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int A[] = new int[N];
-        for (int i = 0; i < A.length; i++) {
+        int A[] = new int[N + 1];
+        for (int i = 1; i < A.length; i++) {
             A[i] = sc.nextInt();
         }
 
         int count = 0;
-        boolean allEven = true;
+        boolean flag = true;
 
-        while (allEven) {
-            allEven = true;
-            for (int i = 0; i < N; i++) {
-                if (A[i] % 2 != 0) {
-                    allEven = false;
+        while (flag) {
+            for (int i = 1; i < A.length; i++) {
+                if (A[i] % 2 == 0) {
+                    A[i] /= 2;
+                } else {
+                    flag = false;
                     break;
                 }
             }
 
-            if (allEven) {
-                for (int i = 0; i < N; i++) {
-                    A[i] /= 2;
-                }
+            if (flag) {
                 count++;
             }
         }
